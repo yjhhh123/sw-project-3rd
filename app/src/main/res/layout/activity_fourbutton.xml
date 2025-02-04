@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fourbutton">
+
+    <Button
+        android:id="@+id/rs"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="4dp"
+        android:onClick="onreservationClick"
+        android:text="좌석예약"
+        app:layout_constraintBottom_toTopOf="@+id/inf"
+        app:layout_constraintEnd_toStartOf="@+id/rp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/rp"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="285dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="1dp"
+        android:onClick="onreportClick"
+        android:text="신고"
+        app:layout_constraintBottom_toTopOf="@+id/bl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/rs"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/inf"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="73dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="326dp"
+        android:onClick="oninformationClick"
+        android:text="나의 정보"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/bl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/rs" />
+
+    <Button
+        android:id="@+id/bl"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginEnd="67dp"
+        android:layout_marginBottom="330dp"
+        android:onClick="onblacklistClick"
+        android:text="블랙리스트 (관리자 전용)"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/inf"
+        app:layout_constraintTop_toBottomOf="@+id/rp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
